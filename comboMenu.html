@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <h style = "color:Tomato;">Combo Menu Python Project</h>
+  <pre>CODE
+Burger=input("would you like a burger?")
+Total_Price=0
+BurgerBought=False
+DrinkBought=False
+FriesBought=False
+CondimentsBought=False
+if Burger == "yes":
+    Burger_type=input("Would you like a burger our a cheeseburger our a bacon cheeseburger?")
+    if Burger_type == "burger":
+        print("You ordered a burger which cost 5 bucks.")
+        Total_Price=Total_Price+5
+        BurgerBought=True
+    if Burger_type == "cheeseburger":
+        print("You ordered a cheeseburger which cost 7 bucks.")
+        Total_Price=Total_Price+7
+        BurgerBought=True
+    if Burger_type == "bacon cheeseburger":
+        print("You ordered a bacon cheesebuger which cost 10 dollars")
+        Total_Price=Total_Price+10
+        BurgerBought=True
+if Burger == "no":
+    print("You will be charged 0 dollars")
+    Total_Price=Total_Price+0
+    BurgerBought=False
+Drink=input("Would you like a drink?")
+if Drink == "yes":
+    Drink_Size=input("Would you like a medium our a large our a gigantic drink?")
+    if Drink_Size == "medium":
+        print("You ordered a medium drink which cost 2 dollars.")
+        Total_Price=Total_Price+2
+        DrinkBought=True
+    if Drink_Size == "large":
+        print("You ordered a large drink which cost 3 dollars.")
+        Total_Price=Total_Price+3
+        DrinkBought=True
+    if Drink_Size == "gigantic":
+        print("You ordered a gigantic drink which cost 5 dollars.")
+        Total_Price=Total_Price+5
+        DrinkBought=True
+if Drink == "no":
+    print("You ordered no drink so you will be charged 0 dollars")
+    Total_Price=Total_Price+0
+    DrinkBought=False
+Fries=input("Would you like any fries?")
+if Fries == "yes":
+    Fries_Size=input("Would you like small, medium our large fries?")
+    if Fries_Size == "small":
+        SuperSize=input("You ordered small fires would you like to megasize them?")
+        if SuperSize == "yes":
+            print("You ordered megasized fries and will be charged 8 dollars.")
+            Total_Price=Total_Price+8
+            FriesBought=True
+        if SuperSize == "no":
+            print("You ordered small fries and will be charged 3 dollars")
+            Total_Price=Total_Price+3
+            FriesBought=True
+    if Fries_Size == "medium":
+        print("You ordered medium fries and will be charged 5 dollars")
+        Total_Price=Total_Price+5
+        FriesBought=True
+    if Fries_Size == "large":
+        print("You ordered large fries and will be charged 8 dollars")
+        Total_Price=Total_Price+8
+        FriesBought=True
+if Fries == "no":
+    print("You bought no fries and will be charged 0 dollars.")
+    Total_Price=Total_Price+0
+    FriesBought=False
+Condiment=input("would you like ketchup and mustard?")
+if Condiment == "yes":
+    print("You ordered condiments and will be charged 1 dollar")
+    Total_Price=Total_Price+1
+    CondimentsBought=True
+if Condiment == "no":
+    print("No condiments for you buckster")
+    CondimentsBought=False
+if BurgerBought and FriesBought and DrinkBought and CondimentsBought:
+    Total_Price=Total_Price-2
+print("your order came out to "+str(Total_Price)+(" pay up right now buckero"))
+</pre>
+</html>
+</html>
