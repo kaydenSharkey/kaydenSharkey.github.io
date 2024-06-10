@@ -1,4 +1,70 @@
 <!DOCTYPE html>
 <html>
   <h>STUDY BUDDY PYTHON PROJECT</h>
+  <p>THE PROGRAM:
+
+from random import randint
+
+
+while True:
+    StudyBuddys = []
+
+    StudyNeeds = []
+
+    StudyTutors = ["aiden", "ron", "Sarah"]
+
+    StudyNeeds = ["bo", "john", "jessica", "nate", "ryan"]
+
+    username = input("What would you like to go by on this app?")
+ 
+    print("Hello " + str(username) + " welcome to study buddy pro, the app for all your studying needs!!!!!")
+
+    user_input = input("What would you be needing today,"
+    """type BECOME TUTOR to register to become a tutor on study buddy
+    type FIND TUTOR to find a totur on study buddy.""")
+
+    if user_input == "BECOME TUTOR":
+
+        StudyTutors.append(username)
+
+        TutorChoice = input("Would you like to find a buddy right now?")
+
+        if TutorChoice == "yes":
+
+            x = randint(0,5)
+
+            BuddyPick = StudyNeeds[x]
+            
+            print("You can totur ", BuddyPick)
+
+        else:
+
+            print("done")
+
+    if user_input == "FIND TUTOR":
+
+        StudyNeeds.append(username)
+
+        NeedsChoice = input("Would you like to find a tutor right now?")
+
+        if NeedsChoice == "yes":
+            y = randint(0,2)
+
+            TutorPick = StudyNeeds[y]
+
+            print(TutorPick, "is who can help you study.")
+        else:
+            print("done")
+    else:
+        print("done")
+</p>
+  <p>USER STORY:
+The user will download the app and will choose if they are the tutor and the one doing the
+tutoring and if the select that they need tutoring the will be put on a list/ role of people in need
+of tutoring and they will select what subject what they need help with and one they select
+what subject they need it will pull a tutor from a list of subjects that you need help with and
+once you get the tutor the user will get moved to a list saying that the user and the tutor are
+study buddys and once you guys are done studying with the subject you will go to the app and
+click the stop studying button and it will put both of them back into the lists and will remove
+them as study buddies.</p>
 </html>
